@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   validates :email, uniqueness: true 
+  validates :email, length: {in: 5..50}
   
   has_one :profile
   has_many :articles, ->{order 'published_at DESC, title ASC'},
