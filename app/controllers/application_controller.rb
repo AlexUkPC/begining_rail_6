@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   helper_method :current_user, :logged_in?
   def current_user
-    return uless session[:user_id]
+    return unless session[:user_id]
     @current_user ||= User.find_by(id: session[:user_id])
   end
   def authenticate
