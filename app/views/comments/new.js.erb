@@ -1,0 +1,7 @@
+document
+    .querySelector("#comments")
+    .insertAdjacentHTML(
+        "afterend",
+        "<%= escape_javascript render partial: 'new' %>"
+    );
+document.querySelector("#new_comment_link").style.display = "none";
