@@ -21,7 +21,7 @@
     <%= form.text_field :location %>
   </div>
 
-  <div class="field">
+  <div class="field check_box_label">
     <%= form.collection_check_boxes(:category_ids, Category.all, :id, :name) do |b| %>
       <% b.label {b.check_box + b.text } %>
     <% end %>
