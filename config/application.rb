@@ -20,3 +20,10 @@ module BeginingRail6
     # config.eager_load_paths << Rails.root.join("extras")
   end
 end
+module App
+  class Application < Rails::Application
+    # [...]
+
+    config.action_view.form_with_generates_remote_forms = true
+  end
+end
