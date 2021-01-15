@@ -15,4 +15,9 @@ class NotifierMailer < ApplicationMailer
 
     mail to: receiver_email, subject: 'Interesting Article' 
   end
+  def comment_added(comment)
+    @article = comment.article
+    mail to: @article.user.email, subject: "New Comment for '#{@article.title}'"
+  end
+  
 end

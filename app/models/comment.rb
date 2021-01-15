@@ -11,7 +11,7 @@ class Comment < ApplicationRecord
   end
 
   def email_article_author
-    puts "We will notify #{article.user.email} in Chapter 12" if article.user
+    NotifierMailer.comment_added(self).deliver
   end
   
 end
