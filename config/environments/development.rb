@@ -37,7 +37,7 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = false
 
   config.action_mailer.default_url_options = {host: 'http://localhost:3000'}
-  config.action_mailer.smtp_setting={
+  config.action_mailer.smtp_settings={
     address: "mail.artcandle.ro",
     enable_starttls_auto: true,
     port: 465,
