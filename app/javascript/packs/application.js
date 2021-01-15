@@ -19,5 +19,5 @@ ActiveStorage.start()
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-require("trix.js")
-require("@rails/actiontext/index.js")
+require("trix")
+require("@rails/actiontext")
