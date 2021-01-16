@@ -8,7 +8,7 @@ class Car
     super()
   end
   
-  def paint
+  def paint(new_color)
     self.color = new_color
   end
   
