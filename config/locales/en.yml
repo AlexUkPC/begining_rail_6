@@ -31,3 +31,6 @@
 
 en:
   hello: "Hello world"
+  comments:
+    errors:
+      not_published_yet: is not published yet
