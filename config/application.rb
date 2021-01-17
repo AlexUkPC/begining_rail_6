@@ -19,6 +19,7 @@ module BeginingRail6
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
     I18n.available_locales = [:en, :'pt-br']
+    I18n.default_locale = 'pt-br'
   end
 end
 module App
